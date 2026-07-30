@@ -1,5 +1,5 @@
-import streamlit as st
 import joblib
+import streamlit as st
 import numpy as np
 from sklearn.datasets import load_iris
 
