@@ -1,7 +1,7 @@
 import streamlit as st
-import joblib
 import pandas as pd
 import numpy as np
+import joblib
 
 cls_model = joblib.load("best_classifier.pkl")
 reg_model = joblib.load("best_regressor.pkl")
