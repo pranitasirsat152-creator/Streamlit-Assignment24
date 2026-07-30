@@ -7,7 +7,7 @@ st.title("Assignment 24 - ML App")
 
 cls_model = joblib.load("best_classifier.pkl")
 reg_model = joblib.load("best_regressor.pkl")
-scaler = joblib.load("scaler.pkl")
+scaler = joblib.load("scaler(1).pkl")
 
 iris = load_iris()
 
