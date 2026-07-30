@@ -5,14 +5,13 @@ from sklearn.datasets import load_iris
 
 st.title("Assignment 24 - ML App")
 
-# Models load kara
 cls_model = joblib.load("best_classifier.pkl")
 reg_model = joblib.load("best_regressor.pkl")
 scaler = joblib.load("scaler.pkl")
 
 iris = load_iris()
 
-# ITHE CHUK HOTI - pura line asa pahije
+
 problem = st.sidebar.radio("1. Choose Problem Type", ("Iris Classification", "Diabetes Regression"))
 
 if problem == "Iris Classification":
