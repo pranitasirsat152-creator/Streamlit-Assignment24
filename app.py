@@ -1,9 +1,11 @@
-import joblib
-import streamlit as st
-import numpy as np
-from sklearn.datasets import load_iris
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib", "scikit-learn"])
 
-st.title("Assignment 24 - ML App")
+import streamlit as st
+import joblib
+import pandas as pd
+import numpy as np
 
 cls_model = joblib.load("best_classifier.pkl")
 reg_model = joblib.load("best_regressor.pkl")
